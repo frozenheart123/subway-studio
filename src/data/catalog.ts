@@ -73,8 +73,8 @@ export interface Step {
 }
 export const STEPS: Step[] = [
   { key: 'bread', num: '01', en: 'THE FOUNDATION', title: '面包', headline: '先选一款面包', description: '一口好滋味，从现烤的面包开始。', hint: '4 款面包 · 单选', titleEn: 'Bread', headlineEn: 'Pick your bread', descriptionEn: 'Great taste starts with fresh-baked bread.', hintEn: '4 breads · pick one' },
-  { key: 'protein', num: '02', en: 'THE GOOD STUFF', title: '主料', headline: '主角，由你决定', description: '香烤、烟熏，加双份也可以。', hint: '可多选 · 每款最多双份', titleEn: 'Protein', headlineEn: 'Choose the star', descriptionEn: 'Grilled, smoked, or doubled up.', hintEn: 'Mix freely · up to double each' },
-  { key: 'veggie', num: '03', en: 'A LITTLE FRESHNESS', title: '蔬菜', headline: '来点鲜活的颜色', description: '脆的、甜的、爽口的，喜欢就多加。', hint: '6 款鲜蔬 · 每款最多 3 份', titleEn: 'Veggies', headlineEn: 'Add some color', descriptionEn: 'Crisp, sweet, fresh. Pile on what you love.', hintEn: '6 veggies · up to 3 portions each' },
+  { key: 'protein', num: '02', en: 'THE GOOD STUFF', title: '主料', headline: '主角，由你决定', description: '香烤、烟熏，加双份也可以。', hint: '可多选 · 每款最多双份', titleEn: 'Main', headlineEn: 'Choose the star', descriptionEn: 'Grilled, smoked, or doubled up.', hintEn: 'Mix freely · up to double each' },
+  { key: 'veggie', num: '03', en: 'A LITTLE FRESHNESS', title: '蔬菜', headline: '来点鲜活的颜色', description: '脆的、甜的、爽口的，喜欢就多加。', hint: '6 款鲜蔬 · 每款最多 3 份', titleEn: 'Veg', headlineEn: 'Add some color', descriptionEn: 'Crisp, sweet, fresh. Pile on what you love.', hintEn: '6 veggies · up to 3 portions each' },
   { key: 'sauce', num: '04', en: 'THE FINISHING TOUCH', title: '酱料', headline: '最后一抹好滋味', description: '同一款酱想加两次？当然可以。', hint: '每款最多 3 份 · 卡路里实时更新', titleEn: 'Sauce', headlineEn: 'The finishing touch', descriptionEn: 'Want the same sauce twice? Go ahead.', hintEn: 'Up to 3 each · calories update live' },
 ]
 

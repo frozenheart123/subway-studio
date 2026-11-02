@@ -95,17 +95,19 @@ export function Pantry({ onFinish }: { onFinish: () => void }) {
 
   return (
     <aside className="paper flex flex-col rounded-[28px] shadow-lift">
-      <div role="tablist" className="flex gap-1 border-b border-on-paper/10 p-2">
+      <div role="tablist" className="grid grid-cols-4 gap-1 border-b border-on-paper/10 p-2">
         {STEPS.map((s, i) => (
           <button
             key={s.key}
             role="tab"
             aria-selected={i === step}
             onClick={() => setStep(i)}
-            className={`flex flex-1 items-center justify-center gap-1 whitespace-nowrap rounded-2xl px-1.5 py-2.5 text-[12px] font-bold transition-colors ${i === step ? 'bg-on-paper text-paper' : 'text-on-paper/60 hover:bg-on-paper/5'}`}
+            title={`${s.num} ${stepText(s).title}`}
+            className={`flex min-w-0 items-center justify-center gap-1 overflow-hidden rounded-2xl px-1 py-2.5 text-[11px] font-bold transition-colors ${i === step ? 'bg-on-paper text-paper' : 'text-on-paper/60 hover:bg-on-paper/5'}`}
           >
-            <span className="display text-[10px] opacity-60">{s.num}</span>{stepText(s).title}
-            {doneFor(s.key) && i !== step && <Check className="h-3 w-3 text-sub-green" />}
+            {i === step && <span className="display text-[9px] opacity-60">{s.num}</span>}
+            <span className="truncate">{stepText(s).title}</span>
+            {doneFor(s.key) && i !== step && <Check className="h-3 w-3 shrink-0 text-sub-green" />}
           </button>
         ))}
       </div>
