@@ -43,3 +43,10 @@ VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
 ## 说明
 
 所有价格、营养数据与支付都是示例，不接收真实订单，也不会扣款。
+
+## 线上地址
+
+- 网站：https://frozenheart123.github.io/subway-studio/
+- 源码：https://github.com/frozenheart123/subway-studio
+
+部署方式：`npm run deploy` 会构建并把 `dist/` 推到 `gh-pages` 分支（需要本地 `.env`，因为 Supabase 地址与 publishable key 在构建时内联）。
